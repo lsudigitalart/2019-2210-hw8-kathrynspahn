@@ -18,7 +18,7 @@ function setup() {
 }
 
 function mousePressed() {
-background(200, 40, 200)
+background(250)
 
   head(500, 270)  
   leg(500, 520)
