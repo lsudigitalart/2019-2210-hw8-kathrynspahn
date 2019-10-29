@@ -1,3 +1,4 @@
+var leg, head;
 
 function preload(){
     leg1 = loadImage("images/leg1.png");
@@ -11,27 +12,27 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(900, 1000)
+  createCanvas(1000, 800);
  imageMode(CENTER);
 
 }
 
 function mousePressed() {
-background(51, 40, 35)
+background(200, 40, 200)
 
-  leg(350, 550)
-  head(350, 100)  
+  head(500, 270)  
+  leg(500, 520)
 }
 
 function leg(x, y) {
-  let x = [leg1, leg2, leg3]
-  let legChoice = random(g)
-  image(legChoice, x, y, 420, 470)
+  let L = [leg1, leg2, leg3]
+  let legChoice = random(L)
+  image(legChoice, x, y, 300, 350)
 }
 
 
-function body(x, y) {
-  let p = [head1, head2, head3]
-  let headChoice = random(y)
-  image(headChoice, x, y, 250, 320)
+function head(x, y) {
+  let H = [head1, head2, head3,]
+  let headChoice = random(H)
+  image(headChoice, x, y, 280, 350)
 }
